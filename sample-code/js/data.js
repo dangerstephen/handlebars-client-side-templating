@@ -1,4 +1,5 @@
 var data = {
+  basicInfo:[{
   school: "General Assembly",
   city: "San Francisco",
   course: "Web Development Immersive",
@@ -6,6 +7,7 @@ var data = {
   cohort: 33,
   room: 3,
   github_schedule: "https://github.com/sf-wdi-33/schedule-33",
+}],
   developers:[
     {
       first_name: 'Casey',

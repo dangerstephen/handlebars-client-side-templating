@@ -38,19 +38,27 @@
 
           <h2>Developers</h2>
           <ul id="developers-list" class="list-group">
-            <!-- sample structure for a list item -->
-            <li class="list-group-item">
-              <a href="https://www.github.com/bobloblaw" target="_blank"><strong>Bob Loblaw</strong></a>
-            </li>
-            <!-- handlebars template for inside of developers list -->
             <script id="developer-li-template" type="text/x-handlebars-template">
               {{#each developers}}
                 <li class="list-group-item">
                   <a href="https://www.github.com/{{github_username}}" target="_blank"><strong>{{first_name}} {{last_name}}</strong></a>
-                  <a href="https://{{github_username}}.github.io">{{first_name}}'s personal page</a>
+                <ul><li>  <a href="https://{{github_username}}.github.io">{{first_name}}'s personal page</a></li></ul>
                 </li>
               {{/each}}
             </script>
+</ul>
+            <h2>Instructors</h2>
+            <ul id="instructors-list" class="list-group">
+              <script id="instructors-li-template" type="text/x-handlebars-template">
+                {{#each instructional_team}}
+                  <li class="list-group-item">
+                    <a href="https://www.github.com/{{github_username}}" target="_blank"><strong>{{first_name}} {{last_name}}</strong></a>
+                  <ul><li>   <a href="https://{{github_username}}.github.io">{{first_name}}'s personal page</a></li></ul>
+                  </li>
+                {{/each}}
+              </script>
+
+
           </ul>
         </div>
       </div>
